@@ -46,13 +46,19 @@ export default function App() {
                   <img className="card-img-top" src={actor.image} alt="" />
                 </div>
                 <div className="card-body">
-                  <h5 className="card-title">{actor.name}</h5>
+                  <h5 className="card-title my-2">{actor.name}</h5>
                   <ul>
-                    <li>Born in : {actor.birth_year}</li>
-                    <li>Nationality : {actor.nationality}</li>
-                    <li>Biography : {actor.biography}</li>
                     <li>
-                      Awards :{" "}
+                      <strong>Born in </strong>:{actor.birth_year}
+                    </li>
+                    <li>
+                      <strong>Nationality</strong> : {actor.nationality}
+                    </li>
+                    <li>
+                      <strong>Biography</strong> : {actor.biography}
+                    </li>
+                    <li>
+                      <strong>Awards</strong> :{" "}
                       <ul>
                         {actor.awards.map((award, index) => (
                           <li key={index}>{award}</li>
@@ -78,12 +84,20 @@ export default function App() {
                   />
                 </div>
                 <div className="card-body">
-                  <h5 className="card-title">{femaleActor.name}</h5>
+                  <h5 className="card-title my-2">{femaleActor.name}</h5>
                   <ul>
-                    <li>Born in : {femaleActor.birth_year}</li>
-                    <li>Nationality : {femaleActor.nationality}</li>
-                    <li>Biography : {femaleActor.biography}</li>
-                    <li>Awards :{femaleActor.awards}</li>
+                    <li>
+                      <strong>Born in </strong>: {femaleActor.birth_year}
+                    </li>
+                    <li>
+                      <strong>Nationality</strong> : {femaleActor.nationality}
+                    </li>
+                    <li>
+                      <strong>Biography</strong> : {femaleActor.biography}
+                    </li>
+                    <li>
+                      <strong>Awards </strong>:{femaleActor.awards}
+                    </li>
                   </ul>
                 </div>
               </div>
